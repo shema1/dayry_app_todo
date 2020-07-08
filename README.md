@@ -1,6 +1,6 @@
-# [Pokemons](https://nostalgic-poitras-70a1ba.netlify.app/)
-This project is for exploring Pokemon. On click of ‘Load More’ another chunk of the list is being loaded and displayed on the page. Pokemon details  displayed after clicking on the single pokemon in list. Previously shown pokemon details  disappear.
-[Link on project](https://nostalgic-poitras-70a1ba.netlify.app/)
+# [dayry_app_todo](https://focused-turing-895842.netlify.app/)
+A simple todo list with react.
+preview https://focused-turing-895842.netlify.app/
 
 
 # Getting Started:
