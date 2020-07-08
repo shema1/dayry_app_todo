@@ -44,6 +44,9 @@ const TodoList = () => {
 	}
 
 	const getItemsFromStorage = () => {
+    if(JSON.parse(localStorage.getItem('items')) === null ){
+      return localStorage.setItem('items', [])
+    }
 		setItems(JSON.parse(localStorage.getItem('items')))
 	}
 
