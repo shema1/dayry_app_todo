@@ -6,7 +6,11 @@ preview https://focused-turing-895842.netlify.app/
 # Getting Started:
 First of all, clone this repo:
 ```
-npm install
+$ git clone https://github.com/shema1/dayry_app_todo.git
+```
+Move to the project dir:
+```
+$ cd dayry_app_todo/
 ```
 ### Compiles and hot-reloads for development
 ```
