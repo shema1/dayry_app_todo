@@ -4,8 +4,22 @@ preview https://focused-turing-895842.netlify.app/
 
 
 # Getting Started:
-In the project directory, you can run:
-
+First of all, clone this repo:
+```
+npm install
+```
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+### Compiles and minifies for production
+```
+npm run build
+```
+### Lints and fixes files
+```
+npm run lint
+```
 npm i
 npm start
 Runs the app in the development mode.
