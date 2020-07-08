@@ -7,16 +7,8 @@ const Comments = ({ selectedItem, updateItem }) => {
   const [comment, setComment] = useState("");
   const [img, setImg] = useState("#000000");
 
-  useEffect(() => {
-    document.addEventListener("keydown", keydownHandler);
-    return () => {
-      document.removeEventListener("keydown", keydownHandler);
-    };
-  }, []);
-
-  const createComment = () => {
+  const createComment = (event) => {
     event.preventDefault();
-    console.log(selectedItem);
     if (!selectedItem.id) return alert("Select item");
     let item = { ...selectedItem };
     let newComment = {
@@ -28,11 +20,18 @@ const Comments = ({ selectedItem, updateItem }) => {
     setComment("");
   };
 
-  const keydownHandler = () => {
+  const keydownHandler = (event) => {
     if (event.keyCode === 13 && event.ctrlKey) {
-      createComment();
+      createComment(event);
     }
   };
+
+  useEffect(() => {
+    document.addEventListener("keydown", keydownHandler);
+    return () => {
+      document.removeEventListener("keydown", keydownHandler);
+    };
+  }, [keydownHandler]);
 
   return (
     <div className="comments container  ">
@@ -43,7 +42,10 @@ const Comments = ({ selectedItem, updateItem }) => {
             <CommentsItem {...elem} key={elem.comment} />
           ))}
       </ul>
-      <form className="form-comments" onSubmit={createComment}>
+      <form
+        className="form-comments"
+        onSubmit={(event) => createComment(event)}
+      >
         <input
           type="color"
           value={img}
