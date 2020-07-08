@@ -1,0 +1,18 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+  
+    &__label {
+      font-weight: bold;
+      font-size: 30px;
+      width: 150px;
+      color: #989ca1;
+      margin-bottom: 20px;
+    }
+    &__input {
+      width: 75%;
+      padding: 8px 20px;
+      border-radius: 5px;
+      border: 1px solid #d6dce4;
+    }
+  }

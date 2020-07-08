@@ -1,0 +1,14 @@
+.comments{
+    align-self: flex-start;
+  }
+  
+  .form-comments{
+    display: flex;
+    justify-content: space-between;
+  
+    &__text{
+      width: 60%;
+      height: 65px;
+      resize: none;
+    }
+  }
